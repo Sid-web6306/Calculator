@@ -2,11 +2,16 @@ body{
     font-family: 'Open Sans',sans-serif;
     background-color: black;
 }
+h1{
+    text-align: center;
+}
 #container{
-    width: 1000px;
-    height: 550px;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
-    background-image: linear-gradient(to right,red,blue);
+    background-image: url('background.jfif');
+    background-size: cover;
+    background-position: center;
 
 }
 #calculator{
@@ -49,8 +54,8 @@ body{
     font-weight: bold;
     font-size: 15px;
 }
-.number,.empty{
-    background-color: #eaedef;
+.number{
+    background-color: lightgrey;
 }
 .number,.operator{
     cursor: pointer;
@@ -60,6 +65,10 @@ body{
 }
 .operator:focus,.number:focus,.empty:focus{
     outline:0;
+}
+
+.operator{
+    background-color: grey;
 }
 button:nth-child(4){
     font-size: 20px;
